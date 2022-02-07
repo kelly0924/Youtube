@@ -17,29 +17,37 @@
   position: relative;
   top: 10px;
 }
+.main_left_nav_icons {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 20px;
+}
 /* center */
 #header_center_div {
-  width: 630px;
+  width: auto;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #header_center_div_div {
+  max-width: 100%;
+  width: 520px;
   height: 40px;
   background-color: #131212;
   border: 1px solid #5a5a5a;
 }
 #header_center_div_text {
+  width: 87%;
   height: 24px;
-  width: 520px;
   position: relative;
   bottom: 8px;
   border: #ffffff;
   background-color: #131212;
 }
 #header_center_div_button_search {
-  width: 60px;
+  width: 12%;
   height: 40px;
   text-align: center;
   background-color: #303030;
@@ -52,6 +60,8 @@
   background-color: #131212;
   border: #ffffff;
   text-align: center;
+  position: relative;
+  left: 5px;
 }
 #header_center_div_icon_mic {
   position: relative;
@@ -88,7 +98,51 @@
   width: 72px;
   height: 74px;
 }
-
+.main_nav_div:hover {
+  background-color: #424242;
+}
+/* hidden nav */
+/* #header_left_img.active {
+  
+} */
+#main_left_hidden_nav {
+  display: none;
+  width: 240px;
+  height: 100%;
+  background-color: #303030;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  /* z-index는 수직 속성을 설정하는 것이다.즉 z축 속성 설정 */
+}
+#main_left_hidden_nav_topdiv {
+  display: flex;
+  height: 56px;
+}
+#main_hidden_nav_div_youtubuimg {
+  position: relative;
+  left: 80px;
+}
+.main_hidden_nav_div {
+  height: 50px;
+}
+.main_hidden_nav_div:hover {
+  background-color: #424242;
+}
+.main_hidden_nav_textdiv {
+  width: 50px;
+  position: relative;
+  left: 100px;
+  bottom: 5px;
+  color: white;
+}
+.hidden_nave_icons {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 30px;
+  top: 15px;
+}
 /* main center css */
 #main_center {
   width: 100%;
@@ -132,4 +186,44 @@
 .min_center_div_details_contens_visitcnt {
   font-size: 8px;
   color: #aaaaaa;
+}
+/* media query */
+
+@media (max-width: 750px) {
+  #header_center_div {
+    width: auto;
+    height: 40px;
+  }
+  #header_center_div_div {
+    max-width: 100%;
+    width: 250px;
+    height: 40px;
+  }
+  #header_center_div_text {
+    width: 85%;
+    height: 24px;
+    position: relative;
+    bottom: 8px;
+  }
+  #header_center_div_button_search {
+    width: 13%;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #header_center_div_text {
+    display: none;
+  }
+  /* #header_center_div_button_search {
+    background-color: #303030;
+  } */
+  #header_center_div_div {
+    display: none;
+  }
+  #header_center_div_iconback_mic {
+    /* background-color: #303030;??사라지게 하고 싶은데?? */
+    border-radius: 0%;
+    border: #303030;
+  }
 }

@@ -13,7 +13,7 @@
         <div id="header_left_div" >
 
             <div class="header_left_div_iconback_div">
-                <img class="icons" src="header/baseline_menu_white_24dp.png">
+                <img id="header_left_img" class="icons" src="header/baseline_menu_white_24dp.png" onclick="showHiddenNav()">
             </div>
             <div class="header_left_div_iconback_div">
                 <img class="icons" src="header/youtube2.png">
@@ -55,23 +55,49 @@
 
         <nav id="main_left_nav">
             <div class="main_nav_div">
-                <img class="icons" src="leftnav/home.png">
+                <img  class="main_left_nav_icons" src="leftnav/home.png">
                 <span>홈</span>
             </div>
             <div class="main_nav_div">
-                <img class="icons" src="leftnav/explore.png">
+                <img class="main_left_nav_icons" src="leftnav/explore.png">
                 <span>탐색</span>
             </div>
             <div class="main_nav_div">
-                <img class="icons" src="leftnav/subscriptions.png">
+                <img class="main_left_nav_icons" src="leftnav/subscriptions.png">
                 <span>구독</span>
             </div>
             <div class="main_nav_div">
-                <img class="icons" src="leftnav/video_library.png">
+                <img class="main_left_nav_icons" src="leftnav/video_library.png">
                 <span>보관함</span>
             </div>
         </nav>
-
+        <nav id="main_left_hidden_nav">
+            <div id="main_left_hidden_nav_topdiv">
+                <div class="main_hidden_nav_topdiv_div">
+                    <img id="header_left_img" class="hidden_nave_icons" src="header/baseline_menu_white_24dp.png" onclick="showHiddenNav()">
+                </div>
+                <div class="main_hidden_nav_topdiv_div">
+                    <img id="main_hidden_nav_div_youtubuimg" class="hidden_nave_icons" src="header/youtube2.png">
+                </div>
+            </div>
+            <div class="main_hidden_nav_div">
+                <img class="hidden_nave_icons" src="leftnav/home.png">
+                <div class="main_hidden_nav_textdiv">홈</div>
+            </div>
+            <div class="main_hidden_nav_div">
+                <img class="hidden_nave_icons" src="leftnav/explore.png">
+                <div class="main_hidden_nav_textdiv">탐색</div>
+            </div>
+            <div class="main_hidden_nav_div">
+                <img class="hidden_nave_icons" src="leftnav/subscriptions.png">
+                <div class="main_hidden_nav_textdiv">구독</div>
+            </div>
+            <div class="main_hidden_nav_div">
+                <img class="hidden_nave_icons" src="leftnav/video_library.png">
+                <div class="main_hidden_nav_textdiv">보관함</div>
+            </div>
+    
+        </nav>
         <div id="main_center">
             <div class="main_center_div">
                 
@@ -197,5 +223,6 @@
 
     </main>
     
+    <script src="menu.js"></script>
 </body>
 </html>
