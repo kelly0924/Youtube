@@ -95,6 +95,7 @@
   width: 72px;
   height: 100%;
   text-align: center;
+  display: block;
 }
 .main_nav_div {
   width: 72px;
@@ -120,6 +121,8 @@
   z-index: 1;
   margin-left: 0px;
   /* z-index는 수직 속성을 설정하는 것이다.즉 z축 속성 설정 */
+  /* visibility: hidden;
+  transition-property: visibility; */
 }
 #main_left_hidden_nav_topdiv {
   display: flex;
