@@ -84,9 +84,11 @@
 /* main css */
 #body_main {
   display: flex;
+  /* justify-content: space-between; */
   height: 100%;
-  position: relative;
-  top: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: fixed;
 }
 /* main nav css */
 #main_left_nav {
@@ -115,8 +117,8 @@
   height: 100%;
   background-color: #212121fa;
   position: fixed;
-  top: 0px;
   z-index: 1;
+  margin-left: 0px;
   /* z-index는 수직 속성을 설정하는 것이다.즉 z축 속성 설정 */
 }
 #main_left_hidden_nav_topdiv {
@@ -156,14 +158,13 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #131212;
+  position: relative;
 }
 .main_center_div {
-  width: 25%px;
+  width: 23%;
   height: 310px;
-  position: relative;
-  top: 10px;
-  left: 10px;
-  margin: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .main_center_div_img {
   width: 320px;
@@ -194,179 +195,4 @@
 .min_center_div_details_contens_visitcnt {
   font-size: 8px;
   color: #aaaaaa;
-}
-/* media query */
-/* @media only screen and(min-width: 1080px) and (max-width: 1400px) {
-  .main_center_div {
-    width: 33%;
-  }
-  .main_center_div_img {
-    width: 360px;
-  }
-} */
-@media (max-width: 1400px) {
-  #main_center {
-    text-align: center;
-  }
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 30%;
-  }
-  .main_center_div_img {
-    width: 350px;
-    height: 190px;
-  }
-}
-@media (max-width: 1220px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 45%;
-  }
-  .main_center_div_img {
-    width: 380px;
-    height: 200px;
-  }
-}
-@media (max-width: 960px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 45%;
-  }
-  .main_center_div_img {
-    width: 370px;
-    height: 180px;
-  }
-}
-@media (max-width: 930px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 45%;
-  }
-  .main_center_div_img {
-    width: 350px;
-    height: 175px;
-  }
-}
-@media (max-width: 850px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 45%;
-  }
-  .main_center_div_img {
-    width: 340px;
-  }
-}
-@media (max-width: 820px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 45%;
-  }
-  .main_center_div_img {
-    width: 330px;
-  }
-}
-@media (max-width: 800px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 45%;
-  }
-  .main_center_div_img {
-    width: 320px;
-  }
-}
-@media (max-width: 800px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 90%;
-  }
-  .main_center_div_img {
-    width: 390px;
-    height: 230px;
-  }
-}
-@media (max-width: 790px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 90%;
-  }
-  .main_center_div_img {
-    width: 380px;
-    height: 210px;
-  }
-}
-@media (max-width: 500px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 90%;
-  }
-  .main_center_div_img {
-    width: 320px;
-  }
-}
-@media (max-width: 450px) {
-  .main_center_div {
-    /* max-width: 30%;
-    width: 350px; */
-    width: 90%;
-  }
-  .main_center_div_img {
-    width: 300px;
-  }
-  #main_left_nav {
-    display: none;
-  }
-}
-/* @media (max-width: 1000px) {
-  .main_center_div {
-    width: 360px;
-  }
-} */
-
-@media (max-width: 750px) {
-  #header_center_div {
-    width: auto;
-    height: 40px;
-  }
-  #header_center_div_div {
-    max-width: 100%;
-    width: 250px;
-    height: 40px;
-  }
-  #header_center_div_text {
-    width: 85%;
-    height: 24px;
-    position: relative;
-    bottom: 8px;
-  }
-  #header_center_div_button_search {
-    width: 13%;
-    height: 40px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #header_center_div_text {
-    display: none;
-  }
-  /* #header_center_div_button_search {
-    background-color: #303030;
-  } */
-  #header_center_div_div {
-    display: none;
-  }
-  #header_center_div_iconback_mic {
-    /* background-color: #303030;??사라지게 하고 싶은데?? */
-    border-radius: 0%;
-    border: #303030;
-  }
 }
